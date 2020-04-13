@@ -1,6 +1,7 @@
 import Task from '../Models/ProjectModel';
 let controller = {
     addTask: async (req, res) =>{
+        console.log(req.body);
         const {task, date} = req.body;
         const newTask = new Task({task,date});
         await newTask.save();
