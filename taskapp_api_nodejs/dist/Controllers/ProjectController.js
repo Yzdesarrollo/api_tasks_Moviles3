@@ -8,7 +8,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var controller = {
     addTask: async function addTask(req, res) {
-        console.log(req.body);
         var _req$body = req.body,
             task = _req$body.task,
             date = _req$body.date;
