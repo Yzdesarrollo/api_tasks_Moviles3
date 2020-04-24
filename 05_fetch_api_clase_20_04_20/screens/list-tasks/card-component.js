@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-function CardComponent(){
-
+function CardComponent(props){
+    const {task, date, _id} = props.task;
     return(
         <View style={styles.container}>
-            <Text>card view</Text>
+            <Text>{task}</Text>
+            <Text>{date}</Text>
+            <Text>{_id}</Text>
         </View>
     );
 }
