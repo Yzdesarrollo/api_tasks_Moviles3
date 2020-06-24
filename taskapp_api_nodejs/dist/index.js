@@ -16,6 +16,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _mongoose2.default.Promise = global.Promise;
 
+_app2.default.use(function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
+
 _mongoose2.default.connect("mongodb://localhost:27017/taskapp", { useNewUrlParser: true, useUnifiedTopology: true }).then(function () {
     console.log("Conection ");
     _app2.default.listen(3000, function () {

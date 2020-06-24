@@ -8,4 +8,4 @@ const TaskSchema = new Schema({
     date: {type: String},
 });
 
-module.exports = model("Task",TaskSchema);
+module.exports = model("tasks",TaskSchema);

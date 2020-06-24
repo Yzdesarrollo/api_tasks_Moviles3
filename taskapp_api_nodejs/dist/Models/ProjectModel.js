@@ -11,4 +11,4 @@ var TaskSchema = new _mongoose.Schema({
     date: { type: String }
 });
 
-module.exports = (0, _mongoose.model)("Task", TaskSchema);
+module.exports = (0, _mongoose.model)("tasks", TaskSchema);

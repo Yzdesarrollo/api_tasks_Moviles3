@@ -15,8 +15,8 @@ var router = _express2.default.Router();
 router.get('/listtasks', _ProjectController2.default.listTasks);
 router.get('/gettask', _ProjectController2.default.getTask);
 router.post('/addtask', _ProjectController2.default.addTask);
-router.post('/deletetask', _ProjectController2.default.deleteTask);
-router.post('/updatetask', _ProjectController2.default.updateTask);
+router.delete('/deletetask', _ProjectController2.default.deleteTask);
+router.put('/updatetask', _ProjectController2.default.updateTask);
 //router.get('/data', controller.data);
 
 module.exports = router;
